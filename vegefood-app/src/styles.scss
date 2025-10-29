@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap');
+
+// Font variables
+$font-primary: 'Poppins', Arial, sans-serif;
+$font-secondary: 'Lora', Georgia, serif;
+$font-tertiary: 'Amatic SC', cursive;
+
+// Color variables
+$white: #fff;
+$black: #000000;
+$primary: #82ae46;
+$secondary: #ffe6eb;
+
+$color-1: #e4b2d6;
+$color-2: #dcc698;
+$color-3: #a2d1e1;
+$color-4: #dcd691;
+
+// Global styles
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #999;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-weight: 400;
+}
+
+a {
+  transition: .3s all ease;
+  color: $primary;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $primary;
+    outline: none !important;
+  }
+}
+
+// Helper classes
+.text-primary {
+  color: $primary !important;
+}
+
+.bg-primary {
+  background: $primary !important;
+}
+
+// Responsive utilities
+@media (max-width: 767.98px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
